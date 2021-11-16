@@ -1,0 +1,34 @@
+11-16
+#
+여기선 div대신 view를 씀.
+import { StyleSheet, Text, View } from "react-native"; 
+그래서 이렇게 import를 해야 함
+
+span이나 p도 없다
+텍스트는 무조건 <Text></Text> 써야함
+
+#
+css관련 - StyleSheet.create
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  textTarae: {
+      fontSize: 28,
+  },
+});
+
+변수에 css를 넣어서 필요한 곳에 꺼내서 사용
+자동완성기능 등 좋은게 많아서 이렇게 씀
+
+
+#
+여기선 view가 이미 flex container임.
+
+<View style={{ flex: 1 }}> 에서
+flex는 비율을 계산해줌.
+상위 View에서의 flex: 1은 전체를 뜻하겠고
+자식 4명의 동일한 flex: 1은 각각 25%씩 차지하겠지.
