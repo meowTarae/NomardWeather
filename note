@@ -32,3 +32,30 @@ const styles = StyleSheet.create({
 flex는 비율을 계산해줌.
 상위 View에서의 flex: 1은 전체를 뜻하겠고
 자식 4명의 동일한 flex: 1은 각각 25%씩 차지하겠지.
+
+
+
+#
+ScrollView
+<ScrollView> </ScrollView>
+위아래로 overflow 할 수 있음
+
+좌우로는 <ScrollView horizontal> </ScrollView> 하면됨.
+css적용은 style이 아닌 contentContainerStlye로 써야됨.
+
+pagingEnabled 을 추가해서 페이지를 생성해서
+넘길때 상용화된 그런것처럼되게끔..
+그리고 밑에 페이지 나타내는거 안보이는게 좋을테니
+showsHorizontalScrollIndicator={false} 를 해주자.
+
+
+flex: 1은 지워야 정상 작동 됨.
+
+
+
+#
+Dimensions - 전체 사이즈 구해줌
+const { height, width } = Dimensions.get("windows");
+
+
+
